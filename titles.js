@@ -16,7 +16,7 @@ links.forEach((link, index) => {
     gsap.to(hoverDiv, {
       duration: .1,
       opacity: 1,
-      scale: 1,
+      scale: 1.2,
       ease: "power3.inOut",
     });
 
@@ -29,8 +29,16 @@ links.forEach((link, index) => {
     // body.classList.add(link.getAttribute('data-color'))
   })
 
+  link.addEventListener('mouseenter', () => {
+    gsap.to('.hover-div', {
+      duration: .1,
+      opacity: 1,
+      ease: "power3.inOut",
+    })
+  })
+
   link.addEventListener('mouseleave', () => {
-    title.innerText = 'Take a Photo'
+    title.innerText = 'Capture Your Moment'
 
     body.classList.remove('hovered')
     link.classList.remove('hovered')
@@ -41,7 +49,7 @@ links.forEach((link, index) => {
     gsap.to(hoverDiv, {
       duration: .1,
       opacity: 0,
-      scale: .85,
+      scale: 1,
       ease: "power3.inOut",
     });
 
@@ -52,5 +60,13 @@ links.forEach((link, index) => {
     });
 
     // body.classList.remove(link.getAttribute('data-color'))
+  })
+
+  link.addEventListener('mouseleave', () => {
+    gsap.to('.hover-div', {
+      duration: .1,
+      opacity: 0,
+      ease: "power3.inOut",
+    })
   })
 })
