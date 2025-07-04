@@ -68,20 +68,18 @@ section {
 
 nav {
   position: fixed;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 100;
 }
 .nav-wrapper {
-  backdrop-filter: blur(64px);
-  background-color: rgba(33, 33, 33, 0.677);
-  border: 1px solid #efeeec14;
+  background-color: #ffffff;
+  border: 1px solid black;
   width: 22rem;
   height: 3rem;
   padding: 0.6rem;
   z-index: 1;
-  border-radius: 16px;
 }
 .nav-top {
   position: absolute;
@@ -121,7 +119,7 @@ nav {
   line-height: 100%;
   letter-spacing: -0.02em;
   transition: color 0.25s;
-  color: #ffffff;
+  color: #000000;
 }
 .nav-page .ofh {
   overflow: hidden;
@@ -132,7 +130,7 @@ nav {
 }
 .nav-page .ofh p:nth-child(2) {
   top: 100%;
-  color: #ffffff;
+  color: #000000;
 }
 .nav-pages:hover .ofh p:nth-child(1) {
   color: rgb(111, 111, 111);
@@ -146,7 +144,7 @@ nav {
   line-height: 1.1;
 }
 .nav-links a {
-  color: #ffffff;
+  color: #000000;
   text-transform: capitalize;
   font-size: 14px;
   width: fit-content;
@@ -168,7 +166,6 @@ nav {
 }
 i {
   position: relative;
-  color: var(--primary);
   top: 2px;
 }
 .nav-titles {
@@ -182,7 +179,6 @@ i {
   overflow: hidden;
 }
 .nav-titles span {
-  color: var(--primary);
   position: absolute;
 }
 .nav-button {
@@ -191,7 +187,6 @@ i {
   gap: 5px;
 }
 .nav-button span {
-  color: #ffffff;
   position: absolute;
   right: 0;
   top: 0%;
